@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 2</title>
+</head>
+<body>
+<h1>Giải phương trình bậc II</h1>
+<p>Nhập các hệ số a, b và c:</p>
+<input type="number" id="a" placeholder="Nhập a">
+<input type="number" id="b" placeholder="Nhập b">
+<input type="number" id="c" placeholder="Nhập c">
+<button onclick="solveQuadraticEquation()">Giải</button>
+<div id="result"></div>
+
+<script>
+    function solveQuadraticEquation() {
+        const a = parseFloat(document.getElementById("a").value);
+        const b = parseFloat(document.getElementById("b").value);
+        const c = parseFloat(document.getElementById("c").value);
+        const discriminant = b ** 2 - 4 * a * c;
+
+        if (a === 0) {
+            document.getElementById("result").innerText = "Phương trình không phải là phương trình bậc II.";
+        } else if (discriminant > 0) {
+            const x1 = (-b + Math.sqrt(discriminant)) / (2 * a);
+            const x2 = (-b - Math.sqrt(discriminant)) / (2 * a);
+            document.getElementById("result").innerText = `Phương trình có hai nghiệm thực x1 = ${x1.toFixed(2)} và x2 = ${x2.toFixed(2)}.`;
+        } else if (discriminant === 0) {
+            const x = -b / (2 * a);
+            document.getElementById("result").innerText = `Phương trình có một nghiệm kép x = ${x.toFixed(2)}.`;
+        } else {
+            document.getElementById("result").innerText = "Phương trình không có nghiệm thực.";
+        }
+    }
+</script>
+</body>
+</html>

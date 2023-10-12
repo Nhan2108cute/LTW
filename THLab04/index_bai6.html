@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .error {
+            color: red;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+<div id="header_contact">
+    <p>Contact Us</p>
+</div>
+<div>
+    <div id="container">
+        <div class="input_all_text">
+            <form class="form_text_fullname">
+                <p>FULL NAME*</p>
+                <input type="text" placeholder="Enter Your Name" id="fullname">
+                <div class="error" id="fullname-error"></div>
+            </form>
+        </div>
+        <div class="input_all_text">
+            <form class="form_text_email">
+                <p>EMAIL*</p>
+                <input type="text" placeholder="Enter Your Email" id="email">
+                <div class="error" id="email-error"></div>
+            </form>
+        </div>
+        <div class="input_all_text">
+            <form class="form_text_phone">
+                <p>PHONE</p>
+                <input type="text" placeholder="Enter Your Phone Number" id="phone">
+                <div class="error" id="phone-error"></div>
+            </form>
+        </div>
+        <div class="input_all_text">
+            <form class="form_text_neededservice">
+                <p>NEEDED SERVICE*</p>
+                <select id="needed-service">
+                    <option value="a"> Please Choose</option>
+                    <option value="b">One Choose</option>
+                    <option value="c">TWO Choose</option>
+                    <option value="d">THREE Choose</option>
+                    <option value="e">FOUR Choose</option>
+                </select>
+                <div class="error" id="needed-service-error"></div>
+            </form>
+        </div>
+        <div class="input_all_text">
+            <form class="form_text_message">
+                <p>Message</p>
+                <textarea placeholder="Your Message here" id="message"></textarea>
+                <div class="error" id="message-error"></div>
+            </form>
+        </div>
+    </div>
+    <nav class="end-button">
+        <button onclick="validateForm()">Submit →</button>
+    </nav>
+</div>
+<script>
+    function validateForm() {
+        let valid = true;
+
+        const fullname = document.getElementById("fullname").value;
+        const email = document.getElementById("email").value;
+        const phone = document.getElementById("phone").value;
+        const neededService = document.getElementById("needed-service").value;
+        const message = document.getElementById("message").value;
+
+        // Reset error messages
+        document.getElementById("fullname-error").textContent = "";
+        document.getElementById("email-error").textContent = "";
+        document.getElementById("phone-error").textContent = "";
+        document.getElementById("needed-service-error").textContent = "";
+        document.getElementById("message-error").textContent = "";
+
+        if (fullname.trim() === "") {
+            document.getElementById("fullname-error").textContent = "Full Name is required.";
+            valid = false;
+        }
+
+        if (email.trim() === "") {
+            document.getElementById("email-error").textContent = "Email is required.";
+            valid = false;
+        }
+
+        // You can add more validation for phone, neededService, and message here.
+
+        if (valid) {
+            // Submit the form if all data is valid
+            // For now, let's just alert a success message.
+            alert("Form submitted successfully!");
+        }
+
+        return false;
+    }
+</script>
+</body>
+</html>
+

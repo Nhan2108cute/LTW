@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 4</title>
+    <style>
+        body {
+            text-align: center;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        textarea, input, button {
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+<h1>Tính số lần xuất hiện</h1>
+<textarea id="textA" placeholder="Nhập đoạn văn (A)"></textarea><br>
+<input type="text" id="textB" placeholder="Nhập dòng văn bản (B)"><br>
+<button onclick="countOccurrences()">Tính</button>
+<p id="result"></p>
+
+<script>
+    function countOccurrences() {
+        const textA = document.getElementById("textA").value;
+        const textB = document.getElementById("textB").value;
+        const regex = new RegExp(textB, 'g');
+        const count = (textA.match(regex) || []).length;
+        document.getElementById("result").textContent = `Số lần xuất hiện của '${textB}' trong đoạn văn (A): ${count}`;
+    }
+</script>
+</body>
+</html>

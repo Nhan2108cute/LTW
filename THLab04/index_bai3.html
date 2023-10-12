@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 3</title>
+    <style>
+        body {
+            text-align: center;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+        }
+        h1{
+            color:blue;
+        }
+    </style>
+</head>
+<body>
+<h1>Lời chào ngẫu nhiên</h1>
+<p id="greeting"></p>
+
+<script>
+    // Mảng chứa các lời chào ngẫu nhiên
+    const greetings = [
+        "Chào bạn!",
+        "Xin chào!",
+        "Hello!",
+        "Bonjour!",
+        "Hola!",
+        "Ciao!",
+        "สวัสดี!",
+        "안녕하세요!"
+    ];
+
+    // Chọn một lời chào ngẫu nhiên từ mảng và hiển thị lên trang
+    const randomGreeting = greetings[Math.floor(Math.random() * greetings.length)];
+    document.getElementById("greeting").textContent = randomGreeting;
+</script>
+</body>
+</html>

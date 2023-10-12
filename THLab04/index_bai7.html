@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xoá Button Theo Thứ Tự</title>
+    <style>
+        body {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 300px;
+            margin: 0 auto;
+        }
+        button {
+            width: 45px;
+            height: 45px;
+            margin: 5px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+<h1>Xoá Button Theo Thứ Tự</h1>
+<div id="button-container"></div>
+
+<script>
+    const buttonContainer = document.getElementById("button-container");
+    let currentButtonNumber = 1;
+
+    function createButton(number) {
+        const button = document.createElement("button");
+        button.textContent = number;
+
+        button.addEventListener("click", function() {
+            if (parseInt(button.textContent) === currentButtonNumber) {
+                button.remove();
+                currentButtonNumber++;
+            } else {
+                alert("Nhấn sai! Hãy nhấn vào button tiếp theo.");
+            }
+        });
+
+        buttonContainer.appendChild(button);
+    }
+
+    for (let i = 1; i <= 64; i++) {
+        createButton(i);
+    }
+</script>
+</body>
+</html>

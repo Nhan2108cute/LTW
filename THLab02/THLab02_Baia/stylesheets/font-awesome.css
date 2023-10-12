@@ -1,0 +1,249 @@
+body{
+    font-family: Arial, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+
+}
+.container {
+    width: 1180px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#section_normal_1 {
+    width: 1180px;
+    height: 80px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.one-third{
+    padding-top: 18px;
+    display: flex;
+    float: left;
+
+}
+.two-thirds{
+    display: flex;
+    float: right;
+    padding-top: 18px ;
+    color: #b3b3b3;
+}
+.two-thirds a{
+
+    padding-left: 2px;
+    padding-right: 2px;
+
+}
+.two-thirds .column .omega{
+    float:left;
+}
+
+.htext_style{
+
+    display:flex;
+    padding-top: 8px;
+    padding-right: 50px;
+    font-size: 150%;
+
+
+}
+#section_normal_4_2{
+    background-color: #333333;
+    height: 560px;
+    padding-top: 80px;
+}
+
+.img_style{
+    float: left;
+    width: 540px;
+    height: 487px;
+
+}
+.eight .columns .omega{
+    width: 575px;
+    float: right;
+
+}
+#section_normal_4_2 .blue_text {
+    font-size: 36px;
+    color: #2db9df;
+    position: relative;
+    left:40px;
+}
+.omega .big_title{
+    font-size: 49px;
+    margin: 0;
+    color: #ffffff;
+    position: relative;
+    left:40px;
+}
+#section_normal_4_2 .normal_text{
+    font-size: 21px;
+    color:#868686;
+    position: relative;
+    left:40px;
+}
+.omega .pix_button{
+    font-size: 20px;
+    padding: 15px 25px 15px 55px;
+    border: solid deepskyblue;
+    background-color: deepskyblue;
+    position: relative;
+    top:50px;
+    left: 40px;
+    color:white;
+    text-decoration: none;
+    border-radius: 3px;
+
+}
+.pix_text{
+    position: relative;
+    left:35px;
+}
+.slow_fade{
+
+    margin-left: 5px;
+}
+#section_normal_6{
+    background-color: #eeeeee;
+    height: 393px;
+    padding-top: 10px;
+
+}
+#section_normal_6 h3{
+   text-align: center;
+    font-size: 36px;
+    color:#696969;
+}
+#section_normal_6 h5 {
+    text-align: center;
+    font-size: 21px;
+    color:#b1b1b1;
+    position: relative;
+    bottom:20px;
+}
+
+.b_style .logo_style{
+    width:118px;
+    height: 148px;
+}
+.txt_style{
+
+    float:right;
+    position: relative;
+    bottom: 145px;
+    left:117px;
+    background-color: #ffffff;
+    width:450px;
+    height: 145px;
+    border-radius: 0px 5px 5px 0px;
+    .txt{
+        font-size: 19px;
+        position: relative;
+        left:15px;
+        color:#a4a4a4;
+        top:10px;
+
+    }
+
+}
+.box_1{
+
+    float:left;
+    position: relative;
+    right: 100px;
+    left: 10px;
+}
+.box_2{
+
+    float:right;
+    border-radius: 50%;
+    position: relative;
+    right: 120px;
+}
+.b_style .logo_style{
+    border-radius: 50%;
+    width:82px;
+    height: 85px;
+    position: relative;
+    top:30px;
+    left: 18px;
+
+}
+.b_style{
+    background-color: #f5f5f5;
+    width:116px;
+    height: 145px;
+    border-radius: 5px 0px 0px 5px;
+}
+.stars_span{
+    position: relative;
+    left:15px;
+    top:15px;
+
+}
+.env_st{
+    font-size: 15px;
+    position: relative;
+    right:30px;
+    bottom:3px;
+    color:#5ca5fc;
+}
+#section_agency_5{
+    text-align: center;
+    /*width: 660px;*/
+    /*margin-right: auto;*/
+    /*margin-left: auto;*/
+    position: relative;
+    bottom: 50px;
+}
+#section_agency_5 .foot_st{
+    width: 660px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+#section_agency_5 .f1_style{
+
+    font-size: 28px;
+    color: #5e9c6b;
+    margin-top: 80px;
+}
+#section_agency_5 .f2_style{
+    margin-top: 55px;
+    font-size: 20px ;
+    color: #b3b3b3;
+}
+#section_agency_5  .second_link a{
+    font-size: 20px;
+    padding: 15px 25px;
+    border: solid #5b9a68;
+    background-color: white;
+    position: relative;
+    top: 45px;
+    left:30px;
+    color:#5b9a68;
+    text-decoration: none;
+    border-radius: 5px;
+}
+#section_agency_5 .rights_st {
+    padding-top: 100px;
+    font-size: 15px;
+    color: #b3b3b3;
+}
+#section_agency_5 .pixfort_st{
+    color:#5b9a68;
+    font-size: 15px;
+}
+#section_agency_5 .center_btn{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+    right: 230px;
+}
+#section_agency_5 .center_btn a{
+    margin: 5px;
+}
+

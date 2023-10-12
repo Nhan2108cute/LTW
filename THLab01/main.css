@@ -1,0 +1,206 @@
+css#main-container {
+    margin: 100px;
+}
+table, td {
+    border: 1px solid;
+}
+li, ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+h3 {
+    text-align: left;
+    padding: 0;
+    margin: 0 0 20px;
+}
+#head {
+    height: 50px;
+    background-color: darkgray;
+}
+#body .list-menu {
+    height: 200px;
+    width: 150px;
+    vertical-align: top;
+    background-color: #FFFF99;
+}
+#body .content {
+    width: 300px;
+    vertical-align: top;
+    background-color: white;
+}
+#body .content p {
+    padding: 0;
+    margin: 0;
+}
+#foot {
+    height: 30px;
+    text-align: center;
+    background-color: #a09c9c;
+}
+#main-container2 {
+    margin: 100px;
+    width: 900px;
+}
+#main-container2 div h3 {
+    text-align: center;
+    margin: 12px 0;
+}
+#main-container2 #header, #main-container2 #nav {
+    height: 48px;
+    border: 1px solid;
+    border-bottom: none;
+}
+#main-container2 #index {
+    float: left;
+    width: 298px;
+    border: 1px solid;
+    border-right: none;
+    border-bottom: none;
+}
+#main-container2 #content {
+    float: left;
+    width: 599px;
+    border: 1px solid;
+    border-bottom: none;
+}
+.clear-fix {
+    clear: both;
+}
+#main-container2 #footer {
+    height: 48px;
+    border: 1px solid;
+}
+.header_section{
+    font-size: 30px;
+    text-align: center;
+    width:900px;
+    height: 120px;
+    flex:1;
+    border: solid black;
+    color:white;
+    background-color: orange;
+    position: absolute;
+
+    left:120px;
+}
+.company_image {
+    font-size: 55px;
+    text-align: center;
+    width: 900px;
+    height: 400px;
+    flex: 1;
+    border: solid black;
+    color: white;
+    background-color: darkgray;
+    position: absolute;
+    top:860px;
+    left: 120px;
+
+}
+.size_company {
+    font-size: 20px;
+    flex: 1;
+    color: white;
+    position: absolute;
+    top:1150px;
+    left: 545px;
+}
+.text-company{
+    font-size: 20px;
+    flex: 1;
+    color: white;
+    position: absolute;
+    top:1250px;
+    left: 500px;
+}
+.our_service{
+    font-size: 50px;
+    position: absolute;
+    top:1270px;
+    left: 460px;
+
+}
+.service1{
+    text-align: center;
+    font-size: 30px;
+    border: solid black;
+    width: 180px;
+    height: 220px;
+    background-color: darkgray;
+    position: absolute;
+    top:1360px;
+    left:250px;
+    color:white;
+}
+.service2 {
+    text-align: center;
+    font-size: 30px;
+    border: solid black;
+    width: 180px;
+    height: 220px;
+    background-color: darkgray;
+    position: absolute;
+    top:1360px;
+    left:465px;
+    color:white;
+
+}
+.service3 {
+    text-align: center;
+    font-size: 30px;
+    border: solid black;
+    width: 180px;
+    height: 220px;
+    background-color: darkgray;
+    position: absolute;
+    top: 1360px;
+    left: 680px;
+    color:white;
+}
+.space3 {
+    text-align: center;
+    font-size: 30px;
+    border: solid black;
+    width: 180px;
+    height: 220px;
+    background-color: darkgray;
+    position: absolute;
+    top: 1600px;
+    left: 680px;
+
+}
+.space2 {
+    text-align: center;
+    font-size: 30px;
+    border: solid black;
+    width: 180px;
+    height: 220px;
+    background-color: darkgray;
+    position: absolute;
+    top: 1600px;
+    left: 465px;
+}
+.space1 {
+    text-align: center;
+    font-size: 30px;
+    border: solid black;
+    width: 180px;
+    height: 220px;
+    background-color: darkgray;
+    position: absolute;
+    top: 1600px;
+    left: 250px;
+}
+.footer_section{
+    text-align: center;
+    width: 900px;
+    height: 120px;
+    font-size: 3rem;
+    border: solid black;
+    background-color: #0a58ca;
+    position: absolute;
+    top:1850px;
+    left: 120px;
+    color:white;
+}

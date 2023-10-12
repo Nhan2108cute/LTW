@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 1</title>
+    <style>
+        body {
+            text-align: center;
+            transition: background-color 0.5s;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 18px;
+            margin: 10px;
+            cursor: pointer;
+        }
+        #red{
+            background-color:red;
+        }
+        #green{
+            background-color:green;
+        }
+        #blue{
+            background-color:blue;
+        }
+        #yellow{
+            background-color:yellow;
+        }
+        #black{
+            background-color:black;
+            color:white;
+        }
+    </style>
+</head>
+<body>
+<button id="red" onclick="changeBackgroundColor('red')">Red</button>
+<button id="green" onclick="changeBackgroundColor('green')">Green</button>
+<button id="blue" onclick="changeBackgroundColor('blue')">Blue</button>
+<button id="yellow" onclick="changeBackgroundColor('yellow')">Yellow</button>
+<button id="black" onclick="changeBackgroundColor('black')">Black</button>
+<script>
+    function changeBackgroundColor(color) {
+        document.body.style.backgroundColor = color;
+    }
+
+</script>
+</body>
+</html>
