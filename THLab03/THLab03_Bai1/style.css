@@ -52,7 +52,6 @@ ul.sub-menu li.sub-item{
 }
 ul.sub-menu li.sub-item:hover{
     cursor: pointer;
-    background: #8b0000;
     color: white;
 }
 
