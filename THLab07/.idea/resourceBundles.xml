@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ResourceBundleManager">
+    <file url="file://$PROJECT_DIR$/Thuc_Hanh_Lap_Trinh_Web_Tomcat/src/main/resources/DB.properties" />
+    <file url="file://$PROJECT_DIR$/Thuc_Hanh_Lap_Trinh_Web_Tomcat/src/main/resources/DB_host.properties" />
+    <file url="file://$PROJECT_DIR$/Thuc_Hanh_Lap_Trinh_Web_Tomcat/src/main/resources/DB_port.properties" />
+    <custom-resource-bundle>
+      <file value="file://$PROJECT_DIR$/Thuc_Hanh_Lap_Trinh_Web_Tomcat/src/main/resources/DB.properties" />
+      <file value="file://$PROJECT_DIR$/Thuc_Hanh_Lap_Trinh_Web_Tomcat/src/main/resources/DB_host.properties" />
+      <file value="file://$PROJECT_DIR$/Thuc_Hanh_Lap_Trinh_Web_Tomcat/src/main/resources/DB_port.properties" />
+      <base-name>DB</base-name>
+    </custom-resource-bundle>
+  </component>
+</project>
